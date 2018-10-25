@@ -19,9 +19,7 @@ public class SettingActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
         mUserSelect = findViewById(R.id.tv_user_select);
-        mUserSelect.setText(getString(R.string.user_select_language,
-                LocalManageUtil.getSelectLanguage(this)));
-        //
+        mUserSelect.setText(getString(R.string.user_select_language, LocalManageUtil.getSelectLanguage(this)));
         setClick();
     }
 
