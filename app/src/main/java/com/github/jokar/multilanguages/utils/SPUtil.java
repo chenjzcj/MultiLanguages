@@ -25,7 +25,7 @@ public class SPUtil {
     public void saveLanguage(int select) {
         SharedPreferences.Editor edit = mSharedPreferences.edit();
         edit.putInt(TAG_LANGUAGE, select);
-        edit.commit();
+        edit.apply();
     }
 
     public int getSelectLanguage() {

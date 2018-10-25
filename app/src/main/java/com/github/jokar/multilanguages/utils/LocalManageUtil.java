@@ -12,6 +12,9 @@ import com.github.jokar.multilanguages.R;
 
 import java.util.Locale;
 
+/**
+ * 本地管理工具类
+ */
 public class LocalManageUtil {
 
     private static final String TAG = "LocalManageUtil";
@@ -114,7 +117,7 @@ public class LocalManageUtil {
         SPUtil.getInstance(context).setSystemCurrentLocal(locale);
     }
 
-    public static void onConfigurationChanged(Context context){
+    public static void onConfigurationChanged(Context context) {
         saveSystemCurrentLanguage(context);
         setLocal(context);
         setApplicationLanguage(context);
